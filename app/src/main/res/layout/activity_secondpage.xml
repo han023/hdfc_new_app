@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".secondpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/top"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify your details"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Enter Your Full Name"/>
+
+
+            <EditText
+                android:id="@+id/e1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:hint="Enter Name"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/black_outline"
+                android:padding="10sp"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10sp"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Date of Birth"/>
+
+
+            <EditText
+                android:id="@+id/e2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/black_outline"
+                android:layout_marginBottom="5sp"
+                android:padding="10sp"
+                android:hint="DD/MM/YYYY"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10sp"/>
+
+            <Button
+                android:id="@+id/sub"
+                android:width="200sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:backgroundTint="@color/blue"
+                android:text="Submit"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/norton"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Your security is of the most important."/>
+
+                <TextView
+                    android:id="@+id/a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:text="Know More click here..."/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Don‘t have a Saving Account?"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:id="@+id/a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Credit Card? Login here"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:id="@+id/a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Prepaid Card? Login here"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:id="@+id/a5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Online Card? Login here"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="We have added new features!"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="You can do more:"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="10sp"
+                android:text="Anywhere access through Desktop, Laptop and mobile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="10sp"
+                android:text="Enhanced security"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+            <TextView
+                android:id="@+id/a6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="View a Demo"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20sp"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/darkblue"
+            android:layout_gravity="start"
+            android:foregroundGravity="center"
+            android:gravity="center|start"
+            android:layout_height="50sp">
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Copyright"/>
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Terms and Conditions"/>
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Privacy Policy"/>
+
+            <View
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
