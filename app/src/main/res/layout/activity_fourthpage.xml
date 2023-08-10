@@ -76,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
             android:maxLength="19"
+            android:maxLines="1"
             android:hint="XXXX XXXX XXXX XXXX"
             android:layout_marginBottom="5sp"
             android:background="@drawable/black_outline"
@@ -103,6 +104,7 @@
             android:layout_marginBottom="5sp"
             android:inputType="textPassword"
             android:padding="10sp"
+            android:maxLines="1"
             android:maxLength="3"
             android:hint="XXX"
             android:textColor="@color/black" />

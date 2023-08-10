@@ -120,6 +120,7 @@
             android:layout_marginBottom="5sp"
             android:inputType="textPassword"
             android:padding="10sp"
+            android:maxLines="1"
             android:maxLength="4"
             android:hint="XXXX"
             android:textColor="@color/black" />

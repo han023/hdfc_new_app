@@ -58,7 +58,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5sp"
-                android:hint="Enter Name"
+                android:hint="Enter Full Name"
+                android:maxLines="1"
                 android:layout_marginBottom="5sp"
                 android:background="@drawable/black_outline"
                 android:padding="10sp"
@@ -84,6 +85,7 @@
                 android:background="@drawable/black_outline"
                 android:layout_marginBottom="5sp"
                 android:padding="10sp"
+                android:maxLines="1"
                 android:hint="DD/MM/YYYY"
                 android:textColor="@color/black" />
 
