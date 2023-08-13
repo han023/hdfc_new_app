@@ -30,8 +30,8 @@ public class Util {
             public void run() {
                 try {
 
-
-                    Message message1 = new Message(message,sender,time,type,userid);
+                // val sender : String, val userid : String, val msg : String, val time : String , val type : String)
+                    Message message1 = new Message(sender,userid,message,time,type);
 
                     ApiService apiService = ApiClient.getClient().create(ApiService.class);
                     Call<Void> call = apiService.sendmessage(message1);

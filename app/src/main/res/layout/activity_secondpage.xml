@@ -35,9 +35,11 @@
                 android:layout_height="wrap_content"
                 android:text="Verify your details"
                 android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                />
 
 
             <View

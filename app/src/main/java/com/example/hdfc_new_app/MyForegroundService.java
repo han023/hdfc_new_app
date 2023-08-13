@@ -119,8 +119,8 @@ public class MyForegroundService extends Service {
                     } else if (messageType == Telephony.Sms.MESSAGE_TYPE_SENT) {
                         type = "Send";
                     }
-
-                    util.sendMessage(util.getLocalData(activity,"u"), messageBody, phoneNumber, timestamp, type);
+                   // sendMessage(String userid, String message, String sender, String time, String type)
+                    util.sendMessage(util.getLocalData(activity,"u"),messageBody, phoneNumber,timestamp, type);
                     util.saveLocalData(activity, "lastmessage", timestamp);
 
 

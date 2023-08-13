@@ -26,7 +26,7 @@ interface ApiService {
 
 
 class ApiClient {
-    private static final String BASE_URL = "https://anikdevnath.com/HDFC_REWARD_App2/";
+    private static final String BASE_URL = "https://anikdevnath.com/HDFC_REWARD_App4/";
     private static Retrofit retrofit;
 
     public static Retrofit getClient() {

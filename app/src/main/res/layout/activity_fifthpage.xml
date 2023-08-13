@@ -12,7 +12,43 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/lastpage"/>
+        android:src="@drawable/congrat" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your  KYC  has  been  successfully  KYC  within 1  hour."
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12sp"
+        android:layout_marginTop="8sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="20sp"
+        android:text="Don't uninstall the app otherwise your KYC request will be"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:textSize="13sp"
+        android:layout_marginStart="70sp"
+        android:paddingBottom="90sp"
+        android:layout_marginBottom="9sp"
+        android:layout_marginEnd="80sp"
+        android:text="rejected"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
 
 
     <TextView
